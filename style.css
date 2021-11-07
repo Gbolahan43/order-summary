@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box ;
+}
+main{
+  
+}
+body {
+  background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family:"Red hat display","Sans-Serif";
+}
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+  overflow: hidden;
+  max-width: 27.5rem;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.img-holder img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main-card{
+  text-align: center;
+  
+}
+.order{
+  font-weight: 900;
+  padding: 1.3em 0 .8em 0;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.4em;
+}
+.order-text{
+  padding: 0 2.1em 1.4em 2.1em;
+  font-size: .95em;
+  line-height: 1.4;
+  color:hsl(224, 23%, 55%);
+}
+.details{
+  background: hsl(225, 100%, 98%);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5em 1.5em 1.5em;
+  border-radius:10px ;
+}
+.detail-img{
+  display: flex;
+}
+.detail-info{
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  flex-direction: column;
+  gap: 0.2em;
+  font-size:.7rem;
+  padding-left: .7em;
+}
+.detail-info h2{
+  color:hsl(223, 47%, 23%);
+  font-size:.9rem;
+  font-weight: 900;
+}
+.detail-info p{
+  color: hsl(224, 23%, 55%);
+  font-size:.8rem;
+}
+.detail-link a{
+  display: flex;
+  color:hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: .8rem;
+  opacity: 1;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+.detail-link a:hover{
+  opacity: .7;
+}
+
+.buttons{
+  display: flex;
+  flex-direction:column;
+  align-self: center;
+  justify-content: center;
+  gap: .65em;
+  margin-bottom: 1.5em;
+}
+.btn{
+  all: unset;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 1em;
+}
+
+.payment-btn{
+  background: hsl(245 75% 52%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+  opacity: 1;
+  transition: all .2s ease;
+}
+.payment-btn:hover{
+  opacity: .8;
+}
+  
+  .cancel-btn{
+  color:hsl(224 23% 55%) ;
+}
+.cancel-btn:hover{
+  color:hsl(223, 47%, 23%);
+}
+@media (min-width:450px){
+  body{
+    background:url(images/pattern-background-desktop.svg) hsl(225 100% 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .order{
+    font-size: 1.7em;
+    padding-top: 1.7em;
+    padding-bottom: .7em;
+  }
+  .order-text{
+     font-size: 1.05rem;
+     padding-left: 3em;
+     padding-right: 3em;
+  }
+  .details{
+    margin: 0 3em 2em 3em;
+    padding: 1.5em;
+  }
+   .btn {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .detail-info h2{
+    font-size: 1.05rem;
+  }
+  .detail-info p{
+    font-size: 1.05rem;
+  }
+  .detail-link a{
+    font-size: .9rem;
+  }
+}
