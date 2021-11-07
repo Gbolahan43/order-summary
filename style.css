@@ -10,7 +10,7 @@ main{
   
 }
 body {
-  background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
+  background: url(pattern-background-mobile.svg), hsl(225, 100%, 94%);
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
@@ -131,7 +131,7 @@ body {
 }
 @media (min-width:450px){
   body{
-    background:url(images/pattern-background-desktop.svg) hsl(225 100% 94%);
+    background:url(pattern-background-desktop.svg) hsl(225 100% 94%);
     background-repeat: no-repeat;
     background-size: contain;
   }
